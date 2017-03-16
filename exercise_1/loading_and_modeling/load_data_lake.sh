@@ -1,5 +1,7 @@
-ave my current directory
-MY_CWD = $(pwd)
+# !/bin/bash
+
+#save my current directory
+MY_CWD=$(pwd)
 
 # creating staging directories
 mkdir ~/staging
@@ -92,5 +94,5 @@ cd $MY_CWD
 
 #clean exit
 
-exit
+exit 
 
