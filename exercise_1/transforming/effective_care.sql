@@ -1,4 +1,12 @@
---EFFECTIVE CARE
-DROP TABLE IF EXISTS effective_care_tr;
-CREATE TABLE effective_care_tr row format delimited AS SELECT provider_id, measure_id, condition, measure_name, CAST(score AS INT), sample, footnote, CAST(measure_start_date AS DATE), CAST(measure_end_date AS DATE) FROM effective_care;
+DROP TABLE effective_care_parquet;
+CREATE TABLE effective_care_parquet AS
+SELECT provider_id, condition, measure_id, measure_name, score, sample,
+  footnote, measure_start_date, measure_end_date
+FROM effective_care;
+ALTER TABLE effective_care_parquet CHANGE provider_id provider_id BIGINT FIRST;
+ALTER TABLE effective_care_parquet CHANGE score score BIGINT AFTER measure_name;
+ALTER TABLE effective_care_parquet CHANGE sample sample BIGINT AFTER score;
+
+
+
 
