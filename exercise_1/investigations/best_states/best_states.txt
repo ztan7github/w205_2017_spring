@@ -1,15 +1,15 @@
-The best states results are based on average score from the effective_care table. 
+The best_states ranking is based on the average score for providers from the effective_care table. Note that some scores are not in 100-point scale. For simplicity reason, I only choose score that lies between 0 to 100. 
 
-The top 10 best states ranking: 
+The top 10 best states ranking:
 
 Score   State
-61.2	VI
-69.268	DE
-59.083	DC
-57.069	RI
-56.902	AK
-54.082	HI
-53.206	NH
-53.174	SD
-52.977	MD
-52.952	VT
+61.2    VI
+69.268  DE
+59.083  DC
+57.069  RI
+56.902  AK
+54.082  HI
+53.206  NH
+53.174  SD
+52.977  MD
+52.952  VT

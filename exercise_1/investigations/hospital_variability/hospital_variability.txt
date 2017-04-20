@@ -1,0 +1,20 @@
+To determine which measures have the greatest variability between hospitals,
+we calculate the standard deviation of score from the effective_care table for each measure.  
+
+Based on the query, the 10 best measures with largest measure variability are:  
+
+stddev provider_id     measure_name
+
+49.0    531316  	Aspirin at Arrival
+49.0    531316  	Median Time to ECG
+48.5    361328  	Healthcare workers given influenza vaccination
+48.5    361328  	Percent of newborns whose deliveries were scheduled early (1-3 weeks early), when a scheduled delivery was not medically necessary
+47.5    061320  	Aspirin at Arrival
+47.5    061320  	Median Time to ECG
+46.0    141308  	Median Time to ECG
+46.0    501330  	Median Time to ECG
+46.0    501330  	Aspirin at Arrival
+46.0    141308  	Aspirin at Arrival
+
+
+

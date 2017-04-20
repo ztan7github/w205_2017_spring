@@ -1,5 +1,4 @@
-The best_hospitals ranking is based on the average score for procedures from the effective_care table.
-Scores are based on 100-point scale. 
+The best_hospitals ranking is based on the average score for providers from the effective_care table. Note that some scores are not in 100-point scale. For simplicity reason, I only choose score that lies between 0 to 100. 
 
 The 10 hospitals with the highest quality of care:
 
@@ -16,3 +15,4 @@ score   provider_id   hospital_name
 100.0   141344        LAWRENCE COUNTY MEMORIAL HOSPITAL
 100.0   400118        DOCTORS' CENTER HOSPITAL, INC
 100.0   400117        HOSPITAL DR SUSONI INC
+

@@ -9,7 +9,9 @@ CREATE TABLE effective_care_parquet
 AS SELECT provider_id, 
 	hospital_name, 
 	score,
-	state 
+	state,
+	measure_id,
+	measure_name
 FROM effective_care;
 
 ALTER TABLE effective_care_parquet CHANGE score score INT;
