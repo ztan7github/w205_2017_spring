@@ -1,0 +1,15 @@
+The best states results are based on average score from the effective_care table. 
+
+The top 10 best states ranking: 
+
+Score   State
+61.2	VI
+69.268	DE
+59.083	DC
+57.069	RI
+56.902	AK
+54.082	HI
+53.206	NH
+53.174	SD
+52.977	MD
+52.952	VT

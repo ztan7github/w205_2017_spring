@@ -1,0 +1,7 @@
+SELECT STDDEV_POP(score) OVER (PARTITION BY provider_id) AS stddevScore, measure_id, measure_name
+FROM effective_care_parquet
+WHERE score > 0 AND score <= 100
+GROUP BY measure_id, measure_name, score
+ORDER BY stddevScore DESC
+LIMIT 10;
+
