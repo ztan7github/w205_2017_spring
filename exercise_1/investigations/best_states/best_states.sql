@@ -3,4 +3,4 @@ FROM effective_care_parquet
 WHERE score > 0 AND score <= 100 
 GROUP BY state, score  
 ORDER BY avg_score DESC 
-LIMIT 1000;
+LIMIT 100;
