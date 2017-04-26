@@ -12,20 +12,20 @@
           :p 1
           )
     }
-    ;; bolt configuration
+    ;; bolt configuration 1
     {"parse-tweet-bolt" (python-bolt-spec
           options
           {"tweet-spout" :shuffle}
           "bolts.parse.ParseTweet"
           ["word"]
-          :p 2
+          :p 1
           )
      "count-bolt" (python-bolt-spec
           options
-          {"parse-tweet-bolt" ["word"]}
+          {"parse-tweet-bolt" :shuffle}
           "bolts.wordcount.WordCounter"
           ["word" "count"]
-          :p 2
+          :p 1
           )
     }
   ]
