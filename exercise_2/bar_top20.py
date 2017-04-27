@@ -3,6 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import psycopg2
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
+from Tkinter import *
+import matplotlib.pyplot as plt
+
 
 # Use psycopg to connect to Postgres
 # Database name: Tcount;  Fields :  db_word and count 
